@@ -1,4 +1,5 @@
 function [hh,idx] = PlotObjectives3DMv2(varargin)
+% version 2
 % function [hh] = PlotObjectives3DM(XX1,OFnames,OFscales,bycolor,bysize,ncolor,nsizes,out_clr,xbrush)
 %
 % Plots the scatters trade-off between Objective Functions obtained as 3D plots
