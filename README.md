@@ -7,5 +7,5 @@ Functions include the possibility to:
 - Plot all 3D tradeoffs among Objective Functions
 - Plot of Parallel Coordinates
 - Plot of level diagram for Objective Functions
-- Plot of trade-off mosaic fro objective Functions
+- Plot of trade-off mosaic for Objective Functions
 - Some additional functions useful for creating colorbars, colormaps and other stuff.
