@@ -1,5 +1,5 @@
-# MOOVA
-Repository for MOO Visual Analytics
+# VAMOOS
+Repository for Visual Analytics of Multi-Objective Optimization Solutions
 In this repository you will find functions that will help you visualize results of MOO problems.
 Functions include the possibility to:
 
@@ -8,4 +8,6 @@ Functions include the possibility to:
 - Plot of Parallel Coordinates
 - Plot of level diagram for Objective Functions
 - Plot of trade-off mosaic for Objective Functions
+- Plot of Hyper-Radial norm of Objective Functions
+- Plot of Objective Space as function of Decision Variables
 - Some additional functions useful for creating colorbars, colormaps and other stuff.
