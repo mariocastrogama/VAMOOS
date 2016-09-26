@@ -9,4 +9,3 @@ load('results.mat');
 % objs = rand(1400,5);
 
 [hh] = HRV_method(objs);
-  
