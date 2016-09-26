@@ -8,7 +8,7 @@ Functions include the possibility to:
 - PlotOFParallel      : Plot of Parallel Coordinates, allowing brushing
 - level_diagram       : Plot of level diagram for Objective Functions
 - tradeoff_index      : Plot of trade-off index mosaic for Objective Functions
-- HRV_method          : Plot of Hyper-Radial norm of Objective Functions (<a href="">Example</a>)
+- HRV_method          : Plot of Hyper-Radial norm of Objective Functions (<a href="VAMOOS/HRV.png">Example</a>)
 - OFspace             : Plot of Objective Space as function of Decision Variables (still under development)
 - Some additional functions useful for creating colorbars, colormaps and other stuff.
 
