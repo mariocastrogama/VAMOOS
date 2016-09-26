@@ -63,12 +63,10 @@ function [hh,idx] = PlotObjectives3DMv2(varargin)
   sel_fontsize = 10;
   sel_fontweight = 'bold';
   legend_sizes = {};
-%   ifig = 4;
-  
   
   % this can be set to plot different variables
   % it indicates the numerical precision of results
-  ndecimals = 5; 
+  ndecimals = 3; 
   Rmax = 10^ndecimals;
   Rmin = 1/Rmax;
   strformat = ['%4.',num2str(ndecimals),'f'];
@@ -488,11 +486,9 @@ function [hh,idx] = PlotObjectives3DMv2(varargin)
           end
           
           % find best Trade-off point of MOO
-          euc = zeros(ndata,1);
-          for ii =1:ndata; 
-            euc(ii,1)=norm(XX1(ii,:)); 
-          end
-          [~,BTOpos]=min(euc);
+          norm_type = 2;
+          [euc]      = norm_forall(XX1,norm_type);
+          [~,BTOpos] = min(euc);
           clear euc;
           
           [out_clr] = create_colors(ncolor,out_clr);

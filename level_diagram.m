@@ -1,27 +1,49 @@
 function [hh] = level_diagram(XX)
+% function [ hh ] = level_diagram(XX)
+% This function estimates the norm of the Objective Functions w.r.t. the
+% best normalized solution
+% 
+% Input Argument 
+% XX = matrix containing Objectives 
+%
+% Output Arguments
+% hh = handle of the figure
+%
+% Referecences
+% [1] Blasco X, Herrero JM, Sanchis J, Martínez M (2008) A new graphical
+%     visualization of n-dimensional Pareto front for decision-making in
+%     multiobjective optimization. Inf Sci 178(20):3908–3924
+%
+% Created by
+% MSc Mario Castro-Gama
+% PhD Researcher UNESCO-IHE / TU Delft
+% 2016-09-05
+%
+% Still to do 
+% - Input verification and include more variables such as 
+%  + return also the levels for further evaluation (if required)
+%
   [ndata, nobj] = size(XX);
   
   % Plotting options
-  [OFnames,OFscales]=create_fignames(nobj,'obj');
-  sel_fontname = 'Arial';
-  sel_fontsize = 12;
-  sel_fontweight = 'bold';
-  ndecimals = 2;
-  strformat = ['%3.',num2str(ndecimals),'f'];
+  [OFnames,OFscales] = create_fignames(nobj,'obj');
+  sel_fontname       = 'Arial';
+  sel_fontsize       = 12;
+  sel_fontweight     = 'bold';
+  ndecimals          = 3;
+  strformat          = ['%3.',num2str(ndecimals),'f'];
 
   % select which monitor to use 1 or 2
   select_screen(1);
 
   xmin = min(XX);
   xmax = max(XX);
-  XX2 = rescale(XX);
+  XX2  = rescale(XX);
 
   % find the norm of the rescaled MOO solutions
-  euc = zeros(ndata,1);
-  for ii = 1:ndata; 
-    euc(ii,1) = norm(XX2(ii,:),2); 
-  end
-  BTOmax = max(euc);
+  norm_type        = 2;
+  [euc]            = norm_forall(XX2,norm_type);
+  BTOmax           = max(euc);
   [BTOmin, BTOpos] = min(euc);
 
  %% Plot the level diagram of each objective w.r.t. the norm

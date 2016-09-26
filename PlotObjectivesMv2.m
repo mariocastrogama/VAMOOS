@@ -481,11 +481,9 @@ function [hh,idx] = PlotObjectivesMv2(varargin)
           end
           
           % find best Trade-off point of MOO
-          euc = zeros(ndata,1);
-          for ii =1:ndata; 
-            euc(ii,1)=norm(XX1(ii,:)); 
-          end
-          [~,BTOpos]=min(euc);
+          norm_type  = 2;
+          [euc]      = norm_forall(XX1,norm_type);
+          [~,BTOpos] = min(euc);
           clear euc;
           
           [out_clr] = create_colors(ncolor,out_clr);
