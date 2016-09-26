@@ -11,3 +11,14 @@ Functions include the possibility to:
 - Plot of Hyper-Radial norm of Objective Functions
 - Plot of Objective Space as function of Decision Variables
 - Some additional functions useful for creating colorbars, colormaps and other stuff.
+
+It includes tests for:
+- PlotObjectivesMv2
+- PlotObjectives3DMv2
+- PlotOFParallel
+- level_diagram
+- HRV_method
+- OFspace*
+
+
+* Still under development
