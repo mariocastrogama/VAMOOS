@@ -9,7 +9,7 @@ Functions include the possibility to:
 - level_diagram       : Plot of level diagram for Objective Functions
 - tradeoff_index      : Plot of trade-off index mosaic for Objective Functions
 - HRV_method          : Plot of Hyper-Radial norm of Objective Functions
-- OFspace             : Plot of Objective Space as function of Decision Variables
+- OFspace             : Plot of Objective Space as function of Decision Variables (still under development)
 - Some additional functions useful for creating colorbars, colormaps and other stuff.
 
 It includes tests for:
@@ -19,7 +19,4 @@ It includes tests for:
 - level_diagram
 - tradeoff_index
 - HRV_method
-- OFspace*
-
-
-* Still under development
+- OFspace (still under development)
