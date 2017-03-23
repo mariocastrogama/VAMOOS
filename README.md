@@ -20,3 +20,6 @@ It includes tests for:
 - tradeoff_index
 - HRV_method
 - OFspace (still under development)
+
+
+Please if you use it use the proper DOI: 10.5281/zenodo.437872
