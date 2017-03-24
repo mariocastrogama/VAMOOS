@@ -3,16 +3,22 @@ function [OUTnames,OUTscales]=create_fignames(n,nametype)
   OUTscales = {};
   switch nametype
     case 'obj'
-      ntext = 'OF_';
+      ntext = 'OF_{';
     case 'con'
-      ntext = 'C_';
+      ntext = 'C_{';
     case 'dec'
-      ntext = 'X_';
+      ntext = 'X_{';
+    case 'type'
+      ntext = 'min';
   end
   % create names for figures
   for i = 1:n
     OUTscales = cat(2,OUTscales,'linear');
-    OUTnames  = cat(2,OUTnames,[ntext,num2str(i)]);
+    if strcmp(nametype,'type')
+      OUTnames  = cat(2,OUTnames,ntext);
+    else
+      OUTnames  = cat(2,OUTnames,[ntext,num2str(i),'}']);
+    end
   end
   clear i
-end
+end % function
