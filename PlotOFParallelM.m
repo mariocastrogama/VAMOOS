@@ -239,7 +239,7 @@ function [hh,idx] = PlotOFParallelM(varargin)
         
         % start from high values (low fitness) to low values (best fitness)
         for icolor = ncolor:-1:1; 
-          xrange = idx{icolor};
+          xrange = idx{1,icolor};
           if ~isempty(xrange)
             ya = XXbrush_scaled(xrange,:)';
             plot(xa,ya,'color',out_col(icolor,:));
