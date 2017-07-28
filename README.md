@@ -23,3 +23,4 @@ It includes tests for:
 
 
 Please if you use it use the proper DOI: 10.5281/zenodo.437872
+https://zenodo.org/record/437872#.WXtSH4SGNp8
