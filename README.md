@@ -22,5 +22,5 @@ It includes tests for:
 - OFspace (still under development)
 
 
-Please if you use it use the proper DOI: 10.5281/zenodo.437872
-https://zenodo.org/record/437872#.WXtSH4SGNp8
+Please if you use it use the proper
+[![DOI](https://zenodo.org/badge/68290602.svg)](https://zenodo.org/badge/latestdoi/68290602)
