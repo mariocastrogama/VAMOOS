@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/68290602.svg)](https://zenodo.org/badge/latestdoi/68290602)
 
+DOI: 10.5281/zenodo.848842
+
 Repository for Visual Analytics of Multi-Objective Optimization Solutions
 In this repository you will find functions that will help you visualize results of MOO problems.
 Functions include the possibility to:
