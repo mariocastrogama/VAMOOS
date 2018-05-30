@@ -29,5 +29,5 @@ It includes tests for:
 
 Please if you use it use the proper reference
 
-Castro-Gama, M. (2017) Visual Analytics for MOO Solutions, A MATLAB Open Library. DOI: 10.5281/zenodo.597449
-Castro-Gama, M. Lanfranchi, E.A., Marelli, F., and Jonoski, A. (2017) Avoiding Myopic Decision Making In Water Supply Operation. Servizi a Rete 2017(3)47-48. ISSN 2499-6688. (In Italian)
+- Castro-Gama, M. (2017) Visual Analytics for MOO Solutions, A MATLAB Open Library. Zenodo. DOI: 10.5281/zenodo.597449
+- Castro-Gama, M. Lanfranchi, E.A., Marelli, F., and Jonoski, A. (2017) Avoiding Myopic Decision Making In Water Supply Operation. Servizi a Rete 2017(3)47-48. ISSN 2499-6688. (In Italian)
