@@ -1,6 +1,5 @@
 # VAMOOS
-
-[![DOI](https://zenodo.org/badge/68290602.svg)](https://zenodo.org/badge/latestdoi/68290602)
+https://zenodo.org/badge/latestdoi/68290602
 
 New DOI: 10.5281/zenodo.597449
 
